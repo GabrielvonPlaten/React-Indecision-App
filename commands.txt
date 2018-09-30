@@ -1,0 +1,11 @@
+yarn add babel-cli@6.24.1
+yarn add babel-preset-react@6.24.1 babel-preset-env@1.5.2
+
+babel src/app.js --out-file=public/scripts/app.js --presets=env,react
+babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch
+
+babel src/playground/es6-classes.js --out-file=public/scripts/app.js --presets=env,react --watch
+babel src/playground/counter-example.js --out-file=public/scripts/app.js --presets=env,react --watch
+babel src/playground/visibility.js --out-file=public/scripts/app.js --presets=env,react --watch
+
+live-server public
